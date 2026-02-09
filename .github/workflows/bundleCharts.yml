@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     strategy:
-      fail-fast:false
+      fail-fast: false
       matrix:
         chart:
           - "charts/bitnami-charts/bitnami/external-dns"
