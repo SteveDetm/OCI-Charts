@@ -13,6 +13,7 @@ jobs:
       matrix:
         chart:
           - "charts/bitnami-charts/bitnami/external-dns"
+          - "charts/envoyproxy-gateway/charts/gateway-crds-helm"
 
     steps:
       - name: Checkout
