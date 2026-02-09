@@ -1,0 +1,19 @@
+name: Bundle Charts
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    strategy:
+      fail-fast:false
+      matrix:
+        chart:
+          - "charts/bitnami-charts/bitnami/external-dns"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@4
+      - name: List Dir ${{matrix.chart}}
+        run: ls -al ${{matrix.chart}}
