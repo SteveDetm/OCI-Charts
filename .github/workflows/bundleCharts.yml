@@ -18,6 +18,7 @@ jobs:
         chart:
           - "charts/bitnami-charts/bitnami/external-dns"
           - "charts/envoyproxy-gateway/charts/gateway-crds-helm"
+          - "charts/envoyproxy-gateway/charts/gateway-helm"
 
     steps:
       - name: Checkout
